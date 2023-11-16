@@ -1,11 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyFitnessPal-Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navBar">
+        <div class="nav1">
+          <div class="nav1-div">
+            <p>myfitnesspal</p>
+            <span class="material-symbols-outlined"> account_circle </span>
+          </div>
+        </div>
+      </div>
+      <div class="mobSection">
+        <div class="mobSection-content">
+          <div class="txtPara">
+            <p class="nutritionTxt">#1 nutrition tracking app</p>
+            <p class="goalTxt-1">Reach your goals</p>
+            <p class="goalTxt-2">with MyFitnessPal</p>
+            <p>
+              Build healthy habits with the all-in-one food, exercise, and
+              calorie tracker.
+            </p>
+            <a href="">START TODAY > </a>
+          </div>
+          <div class="mobImg">
+            <img
+              src="https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fhome%2Flogged-out-v2%2Fhero-phone-large.png&w=320&q=75"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ratingSection">
+        <div class="ratingSection-content">
+          <img
+            src="https://www.myfitnesspal.com/_next/static/media/review-stars.fa96951f.svg"
+            alt=""
+          />
+          <h2>3.7 Million 5-Star Reviews</h2>
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <p>
+                “Good for tracking calories and macros with a huge database of
+                food.” <br />
+                lian M.
+              </p>
+            </div>
+            <div class="mySlides">
+              <p>
+                “Friendly, easy-to-use app that keeps me accountable.” <br />
+                Dinah L.
+              </p>
+            </div>
+            <div class="mySlides">
+              <p>
+                “Can’t lose weight and stay on track without it.”<br />
+                Jennie S.
+              </p>
+            </div>
+            <div class="mySlides">
+              <p>
+                “Love this app. It keeps me on track with my nutritional
+                goals.”<br />
+                Annette B.
+              </p>
+            </div>
+            <div class="mySlides">
+              <p>
+                “Not only are the tools super helpful, the customer service is
+                insanely awesome!” <br />
+                Laura K.
+              </p>
+            </div>
+            <div class="mySlides">
+              <p>
+                “Helped me get moving on my goals and tracking my weight loss
+                and bodybuilding.” <br />
+                Jason B.
+              </p>
+            </div>
+            <div class="dot-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="goalSection">
+        <div class="goalSection-content">
+          <img
+            src="https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fhome%2Flogged-out-v2%2Fflag.png&w=32&q=75"
+            alt=""
+          />
+          <h2>Hit your health goals in 1-2-3</h2>
+          <div class="goalBoxes">
+            <div class="goalBox">
+              <div class="goalBox-img">
+                <img
+                  src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftrack-food-large.92122bef.png&w=512&q=75"
+                  alt=""
+                />
+              </div>
+              <div class="goalBox-text">
+                <p>1</p>
+                <p>Track food, fitness & fasting</p>
+                <p>
+                  Tracking calories and macros is easy with our barcode scanner
+                  and device integration.
+                </p>
+              </div>
+            </div>
+            <div class="goalBox">
+              <div class="goalBox-text goalBox-evenTxt">
+                <p>2</p>
+                <p>Learn what works</p>
+                <p>
+                  Personalized nutrition insights reveal what's working so you
+                  can make smarter choices.
+                </p>
+              </div>
+              <div class="goalBox-img">
+                <img
+                  src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flearn-what-works-large.e541991a.png&w=512&q=75"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="goalBox">
+              <div class="goalBox-img">
+                <img
+                  src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchange-your-habits-large.1cf58b0c.png&w=512&q=75"
+                  alt=""
+                />
+              </div>
+              <div class="goalBox-text">
+                <p>3</p>
+                <p>Change your habits and reach your goals</p>
+                <p>
+                  Now you have the tools and knowledge to build healthy habits
+                  for life.
+                </p>
+              </div>
+            </div>
+
+            <div class="appPromo">
+              <div class="appPromo-content">
+                <div class="appPromo-text">
+                  <p>35+ apps and devices</p>
+                  <h2>Sync steps, weight, workouts & more</h2>
+                </div>
+                <div class="appPromo-img">
+                  <img
+                    src="https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fhome%2Flogged-out-v2%2Fapp-integrations-large.png&w=512&q=75"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trackingSection">
+        <img
+          src="https://www.myfitnesspal.com/_next/static/media/food-plan.3b9035b7.svg"
+          alt=""
+        />
+        <h2>If it’s edible, it’s in here</h2>
+        <p>Food tracking app with 18 million global foods</p>
+        <a href="">Search food calories > </a>
+      </div>
+      <div class="resultSection">
+        <div class="resultSection-text">
+          <p>Get Results</p>
+          <h2>Nutrition tracking works, here's the proof</h2>
+        </div>
+        <div class="resultSection-js">
+          <div class="resultSection-js-img">
+            <img
+              src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsuccess-users-right.e843aecc.png&w=640&q=75"
+              alt=""
+            />
+          </div>
+
+          <div class="custom-slideshow-container">
+            <div class="custom-slide" id="customSlide1">
+              <p>
+                “I was 307 lbs, and today I am 199 lbs. I participated in a
+                diabetes prevention program, learning how
+                <strong>proper nutrition and exercise are essential</strong>.
+                That is when I began using MyFitnessPal. I still use it
+                everyday.”
+              </p>
+              <p>Larry S.</p>
+            </div>
+
+            <div class="custom-slide" id="customSlide2">
+              <p>
+                “Once I started focusing on providing my body with nutrition for
+                the purpose of building strength, my body has completely
+                changed. More importantly,
+                <strong
+                  >I'm feeling confident and empowered with who I am</strong
+                >.”
+              </p>
+              <p>Brooke N.</p>
+            </div>
+
+            <div class="custom-slide" id="customSlide3">
+              <p>
+                “My biggest realization with MyFitnessPal was
+                <strong>being able to understand the food I ate </strong>... we
+                don't need to jump on some diet fad, but understand our goals
+                and adjust our calories and macros to achieve those goals.”
+              </p>
+              <p>Rohit S.</p>
+            </div>
+
+            <div class="custom-slide" id="customSlide4">
+              <p>
+                “The biggest realization is that I can do better. It is actually
+                possible to eat healthy, and the food can taste good.
+                <strong>MyFitnessPal helped me overhaul my habits</strong>.”
+              </p>
+              <p>Quincy D.</p>
+            </div>
+
+            <div class="custom-slide" id="customSlide5">
+              <p>
+                “This is
+                <strong
+                  >the best I've felt physically, mentally, and
+                  emotionally</strong
+                >
+                in all my 37 years. I'm eating well, exercising, and able to
+                play with my kids.”
+              </p>
+              <p>Alisha S.</p>
+            </div>
+
+            <div class="custom-dot-container">
+              <span class="custom-dot" onclick="customCurrentSlide(1)"></span>
+              <span class="custom-dot" onclick="customCurrentSlide(2)"></span>
+              <span class="custom-dot" onclick="customCurrentSlide(3)"></span>
+              <span class="custom-dot" onclick="customCurrentSlide(4)"></span>
+              <span class="custom-dot" onclick="customCurrentSlide(5)"></span>
+            </div>
+          </div>
+
+          <div class="resultSection-js-img">
+            <img
+              src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsuccess-users-left-desktop.e9cc5aaf.png&w=640&q=75"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="planSection">
+        <div class="newMobSection-content">
+          <div class="newMobSection-text">
+            <p>Have 2 mins?</p>
+            <h2>
+              Get your <span class="spanClass">personalized daily plan</span>
+            </h2>
+            <a href="">TAKE THE QUIZ > </a>
+          </div>
+          <div class="newMobSection-img">
+            <img
+              src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdaily-plan.084be84e.png&w=320&q=75"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="knowledgeSection">
+        <div class="knowledgeSectionContent">
+          <div class="knowledgeSectionContent-imgs">
+            <img src="./img1.png" alt="">
+          </div>
+
+          <div class="knowledgeSectionContent-txt">
+            <p>Our Philosophy</p>
+            <h2>Knowledge is power</h2>
+            <span
+              >“Studies show people who keep a food diary are more likely to hit their goals. MyFitnessPal simplifies nutrition and calorie
+              tracking, provides the data you want, and helps you make sense of
+              it all. </span> <span> Healthy eating is a continuous journey of self-discovery.
+              And the more you track, the more empowered you’ll become to make
+              healthy choices that support your goals.”</span
+            >
+            <span>Stephanie Nelson, MyFitnessPal Registered Dietitian</span>
+          </div>
+        </div>
+      </div>
+      <div class="mediaSection">
+        <h2>As Seen in...</h2>
+        <img
+          src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fas-seen-large.b8f62a53.png&w=750&q=75"
+          alt=""
+        />
+      </div>
+      <div class="qnaSection">
+        <h2>Q&A</h2>
+        <div class="faq">
+          <div class="question">
+            <h3>Is MyFitnessPal a free calorie tracker app?</h3>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="answer">
+            <p>
+              Yes! If you're looking for a free calorie counter app, you're in
+              the right place. Simply sign up for your free account here and
+              start tracking your food. The MyFitnessPal app does a lot more
+              than track calories in foods. You can also track macros, vitamins,
+              and other micronutrients and see how everything you eat supports
+              your goals. Want to level up your goals? Upgrade to Premium!
+              Unlock MyFitnessPal's best tools (like Barcode Scan, Intermittent
+              Fasting, and Custom Macro Goals). If you've never upgraded to
+              MyFitnessPal Premium or never started a Premium trial before, you
+              are eligible for a 1-month free trial. Start your free trial now.
+              The first Premium subscription charge on your credit card will be
+              after the trial. Once the trial ends, your subscription will
+              auto-renew unless you cancel. If you purchased a monthly
+              subscription, you will be charged every month. If you purchased an
+              annual subscription, you will be charged every year. You may
+              cancel your recurring subscription at any time. Cancel at least 24
+              hours before the next renewal date to avoid being charged for the
+              upcoming billing cycle. When you cancel, you are canceling the
+              next billing charge—Premium features will remain available to you
+              until the end of your current paid subscription period, regardless
+              of when you cancel the automatic renewal.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>
+              How to track calories with a calorie counter app like
+              MyFitnessPal?
+            </h3>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="answer">
+            <p>
+              If you want to know how many calories are in the foods you eat, or
+              how many calories you eat each day, the MyFitnessPal app makes it
+              easy. Sign up for a free account and download the app. Then you
+              can quickly look up calories and nutrients for any food AND track
+              it all to see the impact of food on your health and fitness goals.
+              Free members can do a simple food search from their app's home
+              screen. Premium members have access to other time-saving tools
+              that allow you to scan a barcode or individual foods with your
+              phone's camera to instantly identify the best match. Learn more
+              about Premium and try it free. However you choose to look up
+              calories for foods, MyFitnessPal gives you access to over 18
+              million global foods in one of the world's largest food databases
+              — including fresh foods, packaged goods, restaurant items, and
+              even foods and recipes you save yourself.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>What nutrition data can I track besides calories></h3>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="answer">
+            <p>
+              MyFitnessPal isn't just a calorie tracking app. We're a macro
+              tracking app, a micronutrient tracking app, and a water tracking
+              app — all in one! (Not to mention the other goals you can track,
+              including weight, exercise, steps, and intermittent fasting.)
+              Simply log the foods you eat using one of our easy food tracking
+              tools, and we'll show you a complete nutritional breakdown for
+              each food, meal, day, and even week. Any way you want to look at
+              your data, you'll gain a better understanding of your personal
+              nutrition so you can make smart choices that align with your
+              weight, health, and fitness goals.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>
+              Dose MyFitnessPal use a BMI calculator or BMR calculator to set
+              goals?
+            </h3>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="answer">
+            <p>
+              Yes, MyFitnessPal uses a BMR calculator to help you set calorie
+              goals. During signup, you'll be asked questions about your height,
+              weight, age, and sex to estimate your BMR (basal metabolic rate).
+              You can also estimate your own BMR with our BMR calculator. The
+              equation used to calculate BMR is called the Mifflin St. Jeor
+              equation* and it takes into account your typical activity level
+              during the day to calculate your daily calorie needs. Depending on
+              your weight goals, we either add or subtract calories from your
+              daily calorie needs (500 calories per pound of weight change per
+              week desired). To help you set safe weight goals during signup, we
+              use a BMI calculator. BMI is based on the ratio of your weight to
+              your height, and we don't allow you to set weight goals below a
+              certain ratio. *The Mifflin St. Jeor equation is considered to be
+              the best estimation of calorie needs compared to other equations,
+              being able to get within 10% of your actual energy needs on
+              average.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>Can I track weight, workouts, water, or intermittent fasting?</h3>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="answer">
+            <p>
+              Yes! The best thing about MyFitnessPal is that it's an all-in-one
+              app. You don't need a separate intermittent fasting app, or
+              different apps for water tracking, weight tracking, or fitness
+              tracking. All MyFitnessPal members can track their weight goals,
+              exercise, and water intake alongside calories and nutrition.
+              MyFitnessPal Premium members have many additional features,
+              including our NEW Intermittent Fasting Tracker. Learn more about
+              Premium and try it free. If you do use other apps and fitness
+              devices as part of your overall health and wellness goals, more
+              than 35 apps and fitness devices connect to MyFitnessPal.
+              Automatically sync your steps, calorie burn, weight, and even
+              sleep! Connect to Apple Watch, Fitbit, Garmin, Samsung Health,
+              Google Fit, Health Connect, smart scales, and many more.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="blogSection">
+        <h2>From our experts</h2>
+        <div class="blogCards">
+          <div class="blogCard">
+            <img
+              src="https://www.myfitnesspal.com/_next/image?url=https%3A%2F%2Fblog.myfitnesspal.com%2Fwp-content%2Fuploads%2F2021%2F01%2FEssential-Guide-to-Food-Logging-featured.jpg&w=1920&q=75"
+              alt=""
+            />
+            <div class="blogCard-div">
+              <h3>Essential Guide to Food Logging</h3>
+              <p>
+                Whether your goal is to lose weight, build strength, perform at
+                your peak or improve your overall health, keeping an accurate
+                food journal of what you eat and drink is essential. It provides
+                valuable insight into your nutrition habits, so you can see
+                trends and make adjustments as needed.
+              </p>
+              <a href="">Read more on MyFitnessPal blog ›</a>
+            </div>
+          </div>
+          <div class="blogCard">
+            <img
+              src="https://www.myfitnesspal.com/_next/image?url=https%3A%2F%2Fblog.myfitnesspal.com%2Fwp-content%2Fuploads%2F2016%2F01%2FThingsYoullLearn.jpg&w=1920&q=75"
+              alt=""
+            />
+            <div class="blogCard-div">
+              <h3>11 Things You’ll Learn Using MyFitnessPal</h3>
+              <p>
+                There’s no easier way to track your food, activity, steps,
+                water, weight and measurements than MyFitnessPal. That’s why
+                more than 200 million people use the app to to achieve their
+                health and fitness goals.
+              </p>
+              <a href="">Read more on MyFitnessPal blog ›</a>
+            </div>
+          </div>
+          <div class="blogCard">
+            <img
+              src="https://www.myfitnesspal.com/_next/image?url=https%3A%2F%2Fblog.myfitnesspal.com%2Fwp-content%2Fuploads%2F2017%2F12%2FEssential-Guide-to-Healthy-Eating-2.png&w=1920&q=75"
+              alt=""
+            />
+            <div class="blogCard-div">
+              <h3>Essential Guide to Healthy Eating</h3>
+              <p>
+                When you start learning more about nutrition, it can seem
+                overwhelming. For people who are interested, there is definitely
+                a lot to learn and explore, but, in the end, basic nutrition is
+                quite simple. It’s so simple, in fact, that we know you can eat
+                better by focusing on these eight things.
+              </p>
+              <a href="">Read more on MyFitnessPal blog ›</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerSection">
+        <div class="footerSectionContent">
+          <div class="footerSectionTxt1">
+            <div class="footerSectionTxt1-div">
+              <p>myfitnesspal</p>
+              <div>
+                <span>Find your healthy, and your happy.</span> <br />
+                <a href="">START TODAY > </a>
+              </div>
+            </div>
+            <div class="footerSectionTxt1-div--">
+              <div class="products">
+                <p>Products</p>
+                <p>Food</p>
+                <p>exercise</p>
+                <p>Apps</p>
+                <p>Premium</p>
+              </div>
+              <div class="resources">
+                <p>Resources</p>
+                <p>Blog</p>
+                <p>Community</p>
+                <p>Contact Us</p>
+                <p>Support Center</p>
+              </div>
+              <div class="company">
+                <p>Company</p>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Press</p>
+              </div>
+            </div>
+          </div>
+          <div class="footerSectionTxt2">
+            ©2023 MyFitnessPal, Inc. Community Guidelines Feedback Terms Privacy
+            API Ad Choices Do Not Sell My Personal Information
+          </div>
+          <div class="socialIcons">
+            <img
+              src="https://www.myfitnesspal.com/_next/static/media/instagram.830bccd6.svg"
+              alt=""
+            /><img
+              src="https://www.myfitnesspal.com/_next/static/media/facebook.6d3a4ecf.svg"
+              alt=""
+            /><img
+              src="https://www.myfitnesspal.com/_next/static/media/youtube.81d7d29b.svg"
+              alt=""
+            /><img
+              src="https://www.myfitnesspal.com/_next/static/media/linkedin.0c28beae.svg"
+              alt=""
+            /><img
+              src="https://www.myfitnesspal.com/_next/static/media/twitter.c67621c0.svg"
+              alt=""
+            /><img
+              src="https://www.myfitnesspal.com/_next/static/media/tiktok.90ebe32c.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
